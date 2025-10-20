@@ -1,0 +1,31 @@
+/*insere(importa) o link que conecta ao goole fontes pra que as css consigam utilizar a fonte */
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+/*serve como um menu / você pode declarar variáveis em css / facilita a organização*/
+:root{
+    --color0:burlywood; /*Para declarar uma variável CSS, usa-se "--" no começo e para acessar usa-se var.*/
+    --color1:rgba(210, 105, 30, 0.896);/*Facilita na hora de alterar várias partes ao mesmo tempo.*/
+    --claro:cornsilk;
+}
+/* seleciona o corpo inteiro onde será exibido o texto e faz alterações*/
+body{ 
+    margin: auto;
+    max-width: 800px;
+    font-family: "Parisienne", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color:var(--color0);/* utiliza  variável*/
+    background-color:var(--color1);
+}
+
+.folha{
+    flex-direction: column;
+    margin: 60px;
+    padding: 10px;
+    text-align: center;
+    font-size: larger;
+    text-indent: 20px;
+    border: 3px solid ;
+    border-radius: 5px;
+    box-shadow: -5px 5px 8px rgba(0, 0, 0, 0.461);/*cria uma sombra que se estende: primeiro valor: laterias (negativo esquerda(left)/positivo direita(right)), segundo valor: cima/baixo(negativo cima(top)/positivo baixo(bottom)), terceiro valor: até onde a sombra vai se estender, por ultimo a cor preto com transparência(rgba) abaixo de 70%*/
+    background-color: var(--claro);
+}
